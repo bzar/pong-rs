@@ -1,0 +1,26 @@
+[package]
+name = "pong-rs"
+version = "0.1.0"
+authors = ["Teemu Erkkola <teemu.erkkola@iki.fi>"]
+
+[lib]
+name = "pong"
+path = "src/pong.rs"
+
+[[bin]]
+name = "pong-piston"
+path = "src/main-piston.rs"
+
+[[bin]]
+name = "pong-qml"
+path = "src/main-qml.rs"
+
+
+[dependencies]
+piston = "0.26.0"
+piston2d-graphics = "0.18.0"
+pistoncore-glutin_window = "0.31.0"
+piston2d-opengl_graphics = "0.35.0"
+cgmath = "0.12.0"
+qml = "0.0.8"
+
